@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgcolor: linear-gradient(
+    180deg,
+    rgba(13, 146, 244, 1) 0%,
+    rgba(119, 205, 255, 1) 50%,
+    rgba(249, 84, 84, 1) 100%
+  );
+  --btnbg: #e520ff;
+
+  --mattblack: rgba(20, 23, 31, 0.759);
+}
+
+body {
+  font-size: 24px;
+  color: #000;
+  background: var(--bgcolor);
+  font-family: "Mulish", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.col-12 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  background: var(--btnbg);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+h1,
+h6 {
+  margin-bottom: 15px;
+}
+
+.small {
+  font-size: 0.9em;
+}
+
+.top-title {
+}
+.top-title h1 {
+}
+.top-title h6 {
+}
+
+/* home */
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+#home nav ul li {
+  margin-left: 15px;
+  font-size: 0.8em;
+}
+
+#home nav ul li a {
+  color: #fff;
+}
+
+/* hero */
+
+#hero {
+  background-color: #acfff9;
+}
+
+.hero-title {
+  margin-right: 50px;
+  font-size: 1.2em;
+}
+
+.hero-title .btn {
+  background-color: #ff8a8a;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* clients */
+
+.client_list ul {
+  justify-content: space-evenly;
+}
+.client_list li {
+  max-width: 50px;
+}
+
+/* industry */
+
+#industry {
+  background-color: #f2faff;
+  /* color: darkorange; */
+}
+.vision_list {
+  justify-content: space-evenly;
+}
+
+.vision {
+  cursor: pointer;
+  max-width: 30%;
+  padding: 25px 15px 15px 15px;
+  min-height: 350px;
+  border: 1px solid #000 0.1;
+  border-radius: 10px;
+  align-content: center;
+  -webkit-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* partner */
+
+#partner {
+  background-color: #e5ffe9;
+}
+
+.partner-list {
+  min-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.partner-tile {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #000 0.1;
+  border-radius: 10px;
+  align-content: center;
+  -webkit-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* vision */
+
+#vision {
+  margin-bottom: 200px;
+}
+.top-title {
+  max-width: 70%;
+  margin: 0 auto 30px auto;
+}
+
+.vision_list {
+  justify-content: space-evenly;
+}
+.vision_tile {
+  max-width: 28%;
+  position: relative;
+}
+.tile_img img {
+  border-radius: 5px;
+}
+
+.tile_content {
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  border-radius: 5px;
+  padding: 40px 20px;
+  background-color: #fff;
+  transform: translate(-50%, 0%);
+}
+
+.tile_content a {
+  color: #e520ff;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+/* contact */
+
+#contact {
+  background-color: #b5e7dd;
+}
+
+.contact_img {
+  max-width: 50%;
+}
+
+.contact_img img {
+  border-radius: 8px;
+}
+
+.contact_form {
+  width: 40%;
+  padding: 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  font-size: 1.2em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label,
+.form-group input,
+.form-group textarea {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.form-group .btn {
+  padding: 10px 25px;
+  font-size: 0.9em;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+/* footer */
+footer {
+  background: #962474f3;
+  color: #fff;
+}
+footer .flex {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.foot_logo img {
+  max-width: 100px;
+  margin-left: -15px;
+}
+
+footer .foot_social {
+  justify-content: flex-start;
+}
+
+footer .foot_social li {
+  margin-right: 10px;
+}
+
+footer .foot_social li a,
+.foot_link ul li a {
+  color: #fff;
+}
+
+.foot_link h2,
+.subs h2 {
+  margin-bottom: 20px;
+}
+
+.foot_link li {
+  margin-bottom: 5px;
+  font-size: 0.7em;
+}
+
+.subs_mail form input,
+.subs_mail form button {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.subs_mail form {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  /* font-size: 1.5em; */
+  position: relative;
+}
+.subs_mail form ::placeholder {
+  font-size: 0.8em;
+}
+
+.subs_mail form input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding-right: 15%;
+}
+.subs_mail form:active,
+.subs_mail form:hover,
+.subs_mail form:focus {
+  -webkit-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.75);
+}
+.subs_mail form input:focus-visible {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.subs_mail form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  border: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 0 5px 5px 0;
+}
+
+.subs_mail form button i {
+  /* margin: 0; */
+  padding-right: 10px;
+}

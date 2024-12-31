@@ -3,224 +3,348 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>EduDecentral</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="home">
-      <div id="logo">
-        <img src="" alt="EduDecentral" />
-      </div>
+      <div class="container col-12 flex">
+        <div class="logo">
+          <img src="assets/logo.png" alt="EduDecentral" />
+        </div>
 
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#client">Clients</a></li>
-          <li><a href="#industry">Industry</a></li>
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#signup">Get Started</a></li>
-        </ul>
-      </nav>
+        <nav>
+          <ul class="flex">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#client">Clients</a></li>
+            <li><a href="#industry">Industry</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="btn"><a href="#signup">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero">
-      <div class="hero-title">
-        <h1></h1>
-        <h6></h6>
-        <button></button>
-      </div>
-      <div class="hero-img">
-        <img src="" alt="" />
-      </div>
-    </section>
-
-    <section id="clients">
-      <div class="top-title">
-        <h1>Our Clients</h1>
-        <h6>We have been working with some fortune 500+ clients</h6>
-      </div>
-      <div class="client_list">
-        <ul>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="industry">
-      <div class="top-title">
-        <h1>Explore The Power of Blockchain in Key Sectors</h1>
-        <h6>who can benefit from blockchain technology</h6>
-      </div>
-      <div class="vision_list">
-        <div class="">
-          <img src="industry" alt="" />
-          <div class="top-title small">
-            <h1>Explore The Power of Blockchain in Key Sectors</h1>
-            <h6>who can benefit from blockchain technology</h6>
-          </div>
+    <section id="hero" class="pt-100 pb-100">
+      <div class="col-12 flex">
+        <div class="hero-title left">
+          <h1>Revolutionizing Education with Blockchain Technology</h1>
+          <h6>
+            Empowering education with blockchain: secure credentials, global
+            access, and transparent learning for all.
+          </h6>
+          <button class="btn">On Board</button>
+        </div>
+        <div class="hero-img">
+          <img
+            src="assets/hero-image.jpg"
+            alt="blockchain education platform"
+          />
         </div>
       </div>
     </section>
 
-    <section id="partner">
-      <div class="top-title">
-        <h1>Explore The Power of Blockchain in Key Sectors</h1>
-        <h6>who can benefit from blockchain technology</h6>
+    <section id="clients" class="pt-100 pb-100">
+      <div class="col-12">
+        <div class="top-title mb-20">
+          <h1>Our Clients</h1>
+          <h6>We have been working with some fortune 500+ clients</h6>
+        </div>
+        <div class="client_list mt-50">
+          <ul class="flex">
+            <li>
+              <a href="#"><img src="assets/biton.png" alt="biton" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/crestal.png" alt="crestal" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/multiverse.png" alt="multiverse"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/overmind.png" alt="overmind" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/conduit.png" alt="conduit" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/roundtable.png" alt="roundtable"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-      <div class="partner-list">
-        <div class="partner-tile">
-          <img src="" alt="" />
-          <div class="top-title small">
-            <h1>Explore The Power of Blockchain in Key Sectors</h1>
-            <h6>who can benefit from blockchain technology</h6>
-          </div>
+    <section id="industry" class="pt-100 pb-100">
+      <div class="col-12">
+        <div class="top-title mb-50">
+          <h1>Explore The Power of Blockchain in Key Sectors</h1>
+          <h6>who can benefit from blockchain technology</h6>
         </div>
-
-        <div class="partner-tile">
-          <img src="" alt="" />
-          <div class="top-title small">
-            <h1>Explore The Power of Blockchain in Key Sectors</h1>
-            <h6>who can benefit from blockchain technology</h6>
+        <div class="vision_list flex">
+          <div class="vision">
+            <div class="top-title small">
+              <span><i class="fa-solid fa-shield-dog"></i></span>
+              <h1>Secure Credentials</h1>
+              <h6>
+                Blockchain guarantees tamper-proof, authentic certifications,
+                enabling instant verification by employers and institutions
+                worldwide.
+              </h6>
+            </div>
           </div>
-        </div>
 
-        <div class="partner-tile">
-          <img src="" alt="" />
-          <div class="top-title small">
-            <h1>Explore The Power of Blockchain in Key Sectors</h1>
-            <h6>who can benefit from blockchain technology</h6>
+          <div class="vision">
+            <div class="top-title small">
+              <span><i class="fa-solid fa-coins"></i></span>
+              <h1>Financial institution</h1>
+              <h6>
+                Empowers learners globally with equitable access to education,
+                allowing them to own and carry credentials across borders and
+                institutions.
+              </h6>
+            </div>
           </div>
-        </div>
 
-        <div class="partner-tile">
-          <img src="" alt="" />
-          <div class="top-title small">
-            <h1>Explore The Power of Blockchain in Key Sectors</h1>
-            <h6>who can benefit from blockchain technology</h6>
+          <div class="vision">
+            <div class="top-title small">
+              <span><i class="fa-solid fa-robot"></i></span>
+              <h1>Smart Processes</h1>
+              <h6>
+                Smart contracts simplify enrollments, fee payments, and
+                certification issuance, enhancing efficiency while reducing
+                administrative costs.
+              </h6>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="vision">
-      <div class="top-title">
-        <h1>Blockchain: The Foundation of the Future</h1>
-        <h6>who can benefit from blockchain technology</h6>
-      </div>
-
-      <div class="vision_list">
-        <div class="vision_tile">
-          <div class="tile_img">
-            <img src="" alt="" />
-          </div>
-          <div class="tile_content">
-            <h6></h6>
-            <h4><a href="#"></a></h4>
-          </div>
-        </div>
-        <div class="vision_tile">
-          <div class="tile_img">
-            <img src="" alt="" />
-          </div>
-          <div class="tile_content">
-            <h6></h6>
-            <h4><a href="#"></a></h4>
-          </div>
+    <section id="partner" class="pt-100 pb-100">
+      <div class="col-12 flex">
+        <div class="top-title left">
+          <h1>Revolutionize Education with Blockchain Technology</h1>
+          <h6>
+            create a secure, transparent, and accessible educational ecosystem
+            that empowers learners and institutions worldwide.
+          </h6>
         </div>
 
-        <div class="vision_tile">
-          <div class="tile_img">
-            <img src="" alt="" />
+        <div class="partner-list">
+          <div class="partner-tile">
+            <div class="partner-icon">
+              <i class="fa-solid fa-money-bill-trend-up"></i>
+            </div>
+            <div class="top-title small">
+              <h1>$150 million+</h1>
+              <h6>Total value raised</h6>
+            </div>
           </div>
-          <div class="tile_content">
-            <h6></h6>
-            <h4><a href="#"></a></h4>
+
+          <div class="partner-tile">
+            <div class="partner-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="top-title small">
+              <h1>120000+</h1>
+              <h6>Active learners</h6>
+            </div>
+          </div>
+
+          <div class="partner-tile">
+            <div class="partner-icon">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="top-title small">
+              <h1>120+</h1>
+              <h6>Blockchain institution</h6>
+            </div>
+          </div>
+
+          <div class="partner-tile">
+            <div class="partner-icon">
+              <i class="fa-solid fa-wave-square"></i>
+            </div>
+            <div class="top-title small">
+              <h1>490,000+</h1>
+              <h6>smart contracts</h6>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="contact">
-      <div class="contact_img">
-        <img src="" alt="" />
-      </div>
-      <div class="contact_form">
-        <form action="post">
-          <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" />
+
+    <section id="vision" class="pt-100 pb-100">
+      <div class="col-12">
+        <div class="top-title">
+          <h1>EduDecentral: The Foundation of the Future</h1>
+          <h6>
+            EduDecentral harnesses blockchain to build a future where education
+            is secure, accessible, and owned by learners, creating a foundation
+            for innovation and global connectivity.
+          </h6>
+        </div>
+
+        <div class="vision_list flex">
+          <div class="vision_tile">
+            <div class="tile_img">
+              <img src="assets/digital_concept.jpg" alt="digital concept" />
+            </div>
+            <div class="tile_content">
+              <h6>
+                EduDecentral will provide tamper-proof, verifiable educational
+                records, enabling students and professionals to showcase their
+                qualifications globally without intermediaries.
+              </h6>
+              <h4><a href="#">Read more</a></h4>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" />
+          <div class="vision_tile">
+            <div class="tile_img">
+              <img
+                src="assets/digital_illustration.jpg"
+                alt="digital illustration"
+              />
+            </div>
+            <div class="tile_content">
+              <h6>
+                By integrating blockchain with AI and IoT, EduDecentral will
+                offer tailored learning paths, securely tracking progress and
+                delivering insights to enhance educational outcomes.
+              </h6>
+              <h4><a href="#">Read more</a></h4>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="mail" id="email" name="email" />
+
+          <div class="vision_tile">
+            <div class="tile_img">
+              <img
+                src="assets/dynamic_illustration.jpg"
+                alt="dynamic illustration"
+              />
+            </div>
+            <div class="tile_content">
+              <h6>
+                EduDecentral will create an ecosystem where tokens are used for
+                tuition, course access, and as rewards for achievements,
+                fostering an engaging and incentivized learning environment.
+              </h6>
+              <h4><a href="#">Read more</a></h4>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-        </form>
+        </div>
       </div>
     </section>
-    <footer>
-      <div class="foot_logo">
-        <img src="" alt="" />
-        <h6></h6>
-        <ul class="foot_social">
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-      <div class="foot_link">
-        <h2>Company</h2>
-        <ul class="link_list">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div class="foot_link">
-        <h2>Company</h2>
-        <ul class="link_list">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-      <div class="subs">
-        <h2>Stay Up to Date</h2>
-        <div class="subs_mail">
-          <form action="post" id="subs">
-            <input type="mail" placeholder="Your email address" />
-            <button type="submit">
-              <i class="fa fas-plane"></i>
-            </button>
+
+    <section id="contact" class="pt-100 pb-100">
+      <div class="col-12 flex">
+        <div class="contact_img">
+          <img src="assets/contact.png" alt="" />
+        </div>
+        <div class="contact_form left">
+          <form action="post">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="mail" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="submit">Send</button>
+            </div>
           </form>
         </div>
       </div>
+    </section>
+    <footer class="pt-100 pb-100">
+      <div class="col-12 flex">
+        <div class="foot_logo left">
+          <img src="assets/logo.png" alt="" />
+          <h6>
+            Copyright &copy; 2025 EduDecentral Inc. <br />
+            All rights reserved
+          </h6>
+          <ul class="foot_social flex">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot_link">
+          <h2>Company</h2>
+          <ul class="link_list left">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="foot_link left">
+          <h2>Company</h2>
+          <ul class="link_list">
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+        <div class="subs left">
+          <h2>Stay Up to Date</h2>
+          <div class="subs_mail">
+            <form action="post" id="subs_form">
+              <input type="mail" placeholder="Your email address" required />
+              <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
