@@ -499,12 +499,16 @@ footer .foot_social li a,
     place-self: center;
   }
 
+  .partner-list{
+
+  }
+
   .vision {
     max-width: 80%;
     margin: 20px auto;
   }
 
-  #vision .vision_list {
+   .partner-list, #vision .vision_list {
     grid-template-columns: auto;
   }
 
