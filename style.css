@@ -8,9 +8,9 @@
 :root {
   --bgcolor: linear-gradient(
     180deg,
-    rgba(13, 146, 244, 1) 0%,
-    rgba(119, 205, 255, 1) 50%,
-    rgba(249, 84, 84, 1) 100%
+    rgb(117 33 198) 0%,
+    rgb(255 189 243) 30%,
+    rgb(206 232 250) 100%
   );
   --btnbg: #e520ff;
 
@@ -218,9 +218,6 @@ h6 {
   margin: 0 auto 30px auto;
 }
 
-.vision_list {
-  justify-content: space-evenly;
-}
 .vision_tile {
   max-width: 28%;
   position: relative;
@@ -380,4 +377,149 @@ footer .foot_social li a,
 .subs_mail form button i {
   /* margin: 0; */
   padding-right: 10px;
+}
+
+/* ipad pro & small display */
+@media (max-width: 1199px) {
+  #home {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .hero-title {
+    margin: 30px;
+  }
+  .hero-img {
+    padding-right: 20px;
+  }
+
+  #partner,
+  footer {
+    padding-right: 30px;
+    padding-left: 10px;
+  }
+  #partner .top-title.left {
+    padding: 30px;
+  }
+
+  .vision_list {
+    align-items: center;
+  }
+  .tile_content {
+    padding: 20px;
+    min-height: 260px;
+  }
+  .tile_content a {
+    margin-top: 0;
+  }
+
+  #contact {
+    padding: 30px;
+  }
+  .contact_form {
+    padding: 20px;
+    font-size: 1em;
+  }
+  .form-group textarea {
+    height: 60px;
+  }
+
+  .foot_link {
+    font-size: 0.8em;
+  }
+}
+
+/* tab */
+
+@media (max-width: 1023px) {
+  #vision {
+    margin-bottom: 100px;
+  }
+  #vision .vision_list {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 220px;
+    justify-content: space-evenly;
+  }
+  .vision_tile {
+    max-width: 100%;
+  }
+  .tile_content {
+  }
+  #partner,
+  footer {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 767px) {
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .left {
+    text-align: center;
+  }
+  .flex {
+    display: grid;
+    justify-content: space-evenly !important;
+  }
+  #home {
+    margin: 20px;
+  }
+  #home nav ul li {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .hero-img {
+    grid-area: 1;
+    padding: 40px;
+    margin: auto;
+  }
+
+  .client_list .flex {
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  .client_list .flex li {
+    place-self: center;
+  }
+
+  .vision {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  #vision .vision_list {
+    grid-template-columns: auto;
+  }
+
+  .contact_img {
+    max-width: 100%;
+    margin: 30px auto;
+  }
+  .contact_form {
+    width: 100%;
+  }
+  footer .foot_social {
+    display: flex;
+  }
+
+  footer .flex div {
+    margin-bottom: 20px;
+  }
 }
